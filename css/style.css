@@ -3,13 +3,16 @@
     padding:0px;
     box-sizing: border-box;
 }
+.img{
+    width:100%;
+}
 .float-left{float:left;}
 .float-right{float:right;}
 .clear{clear:both;}
 .first-leg{font-family: "Noto Sans", sans-serif;}
 .second-leg{font-family: "Urbanist", sans-serif;}
 .topbar{
-    background-color:#e5ddd1c8;
+    background-color:#f4f7f5b4;
     width:100%;
     height:90px;
 }
@@ -24,8 +27,8 @@
 }
 .navbar a{
     color:rgb(4, 75, 4);
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 500;
     width:60%;
     height:90px;
     line-height: 90px;
@@ -83,9 +86,10 @@
     font-weight:500;
     box-shadow:0 4px 4px black;
     transition: 0.5s all ;
-    margin:30px 0 15px;
     display: inline-block;  
 } 
+.mt-1{margin:30px 0 15px;}
+.mt-2{margin:25px  15px 0 0;}
 .btn:hover{
     background-color:rgb(7, 131, 92);
     transform:scale(1.2,1.1);
@@ -103,10 +107,12 @@
 .sen-pre{
     color:rgba(255, 255, 255, 0.648);
     font-size: 16px;
+    margin-bottom:15px;
 }
 .stats-container {
     width:100%;
-    height:150px;
+    max-width: 1000px;
+    margin:0 auto;
 }
 .stat-card {
     background: rgba(255, 255, 255, 0.663); 
@@ -116,8 +122,8 @@
     text-align: center;
     box-shadow: 0 4px 60px rgba(0, 0, 0, 0);
     width:200px;
-    height:120px;
-    margin:0px 50px;
+    height: 20vh;
+    margin:0px 20px;
 }
 .stat-label {
     font-size:1rem;
@@ -132,6 +138,153 @@
 .stat-card span{display:block;}
 .second-paner{
     width:100%;
-    background-color:#e5ddd1;
+    background-color:#f4f7f5;
     height:600px;
+}
+.hed {
+    padding:20px 0;
+    /* border:5px solid red; */
+}
+.hed h1{
+    text-align:center;
+    color: #0d3822;
+    font-size:2.5rem ;
+}
+.hed p{ 
+    width:100%;
+    text-align: center;
+}
+.features-grid {
+    text-align: center; 
+    width: 100%;           
+    max-width: 1200px;   
+    margin: 0 auto;  
+}
+.left-features, 
+.center-image-container, 
+.right-features {
+    display: inline-block; 
+    vertical-align: middle;
+}
+.left-features {
+    width: 28%;
+    text-align: left;     
+}
+.center-image-container {
+    width: 34%;     
+}
+
+.right-features {
+    width: 28%;
+    text-align: left;
+}
+
+.feature-item {
+    margin-top: 50px;       
+    margin-bottom: 50px;    
+}
+.feature-icon {
+    font-size: 24px;
+    margin-bottom: 12px; 
+}
+.feature-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1b4332;
+    margin-bottom: 12px;    
+}
+.feature-item p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;    
+}
+.center-plant {
+    width: 100%;           
+    max-width: 350px;   
+    height: auto;           
+}
+.third-paner{
+    background-image: url(../imag/bg2.png);
+    width:100%;
+    height:60vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: bottom left;
+}
+.cards-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.plant-card {
+    width: 48%; 
+    float: left;                
+    margin-right: 2%;          
+    margin-top:5rem;
+    background: rgba(255, 255, 255, 0.15); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 40px 20px 20px 20px;
+    position: relative;         
+}
+.badge {
+    position: absolute;        
+    top: 15px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    font-size: 11px;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 4px 14px;
+    border-radius: 20px;
+}
+.card-text-side {
+    width: 58%;                 
+    float: left;               
+    padding-top: 20px;        
+}
+.card-text-side h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.card-text-side p {
+    font-family: 'Segoe UI', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.explore-btn {
+    display: inline-block;     
+    background-color: #ffffff;
+    color: #2c3e2e;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 22px;
+    border-radius: 20px;
+    transition:0.5s all;
+}
+.explore-btn:hover{
+    background-color:rgb(207, 231, 224);
+    transform:scale(1.2,1.1);
+}
+.card-image-side {
+    width: 38%;             
+    float: right;            
+}
+.card-image-side img {
+    width: 100%;  
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+.four-paner{
+    width:100%;
+    background-color: white;
+    height: 80vh;
 }
